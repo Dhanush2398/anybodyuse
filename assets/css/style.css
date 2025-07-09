@@ -107,9 +107,9 @@
   --icon-font: "Font Awesome 6 Pro";
   --main-container: 1320px;
   --container-gutters: 24px;
-  --section-space: 120px;
-  --section-space-mobile: 80px;
-  --section-space-small-mobile: 60px;
+  --section-space: 60px;
+  --section-space-mobile: 20%;
+  --section-space-small-mobile: 20px;
   --section-title-space: 70px;
   --ripple-ani-duration: 5s;
 }
@@ -13363,7 +13363,7 @@ a.text-theme:hover,
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 48px;
+  margin-bottom: 8px;
 }
 .about-section.style-6 .about-thumb-area .customar-box .box-top .awards {
   display: flex;
@@ -14608,14 +14608,19 @@ a.text-theme:hover,
   animation: wobble_vertical 1s forwards ease-in-out 0s;
 }
 .service-box-five .inner-box {
-  background: var(--white-color);
+  background:#e3572b;
   padding: 40px 40px 40px;
   border-radius: 20px;
   position: relative;
   z-index: 1;
   overflow: hidden;
   transition: all 0.4s ease 0s;
+  height: 300px;
 }
+.service-box-five p,a{
+  color: #fff;
+}
+
 @media (max-width: 1024px) {
   .service-box-five .inner-box {
     padding: 50px 30px 50px;
@@ -19081,7 +19086,7 @@ a.text-theme:hover,
 }
 .pricing-section.style-3 .pricing-single-box {
   background: var(--white-color);
-  padding: 40px 0 40px 40px;
+  padding: 10px 10px 10px 10px;
   border-radius: 10px;
   display: flex;
   overflow: hidden;
@@ -19123,6 +19128,13 @@ a.text-theme:hover,
   margin-right: 30px;
   z-index: 2;
 }
+@media (max-width: 767px) {
+  .pricing-section.style-3 .pricing-single-box .pricing-box-left {
+    padding-right: 0;
+    margin-right: 0;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1024px) {
   .pricing-section.style-3 .pricing-single-box .pricing-box-left {
     padding-right: 20px;
@@ -19152,7 +19164,9 @@ a.text-theme:hover,
   margin: 0;
 }
 .pricing-section.style-3 .pricing-single-box .pricing-box-left .pricing-title h2 {
-  font-size: 48px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 28px;
   line-height: 1;
   color: var(--dark-color);
   font-weight: 600;
