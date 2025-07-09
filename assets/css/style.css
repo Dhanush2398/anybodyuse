@@ -108,7 +108,7 @@
   --main-container: 1320px;
   --container-gutters: 24px;
   --section-space: 60px;
-  --section-space-mobile: 20%;
+  --section-space-mobile: 10%;
   --section-space-small-mobile: 20px;
   --section-title-space: 70px;
   --ripple-ani-duration: 5s;
@@ -61601,4 +61601,119 @@ a.text-theme:hover,
 
 .footer-logo img{
   height: 80px;
+}
+
+h2.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #063232;
+}
+
+.pricing-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.pricing-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 25px 20px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pricing-card:hover {
+  transform: translateY(-6px);
+}
+
+.badge {
+  display: inline-block;
+  font-weight: bold;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.people {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.price {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 8px 0 20px;
+  color: #222;
+}
+
+.btn-buy {
+  background-color: #DA572D;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: auto;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-buy:hover {
+  background-color: #063232;
+}
+
+/* Color styles for plan types */
+.premium { background-color: #DA572D; }
+.classic { background-color: #FF8C42; }
+.silver { background-color: #A9A9A9; }
+.gold { background-color: #FFD700; color: #333; }
+.diamond { background-color: #4DD0E1; color: #003c47; }
+.platinum { background-color: #063232; }
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .pricing-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .pricing-container {
+    grid-template-columns: 1fr;
+  }
+
+  h2.section-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .pricing-card {
+    padding: 18px 15px;
+  }
+
+  .people {
+    font-size: 16px;
+  }
+
+  .price {
+    font-size: 22px;
+  }
+
+  .btn-buy {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+  }
 }
