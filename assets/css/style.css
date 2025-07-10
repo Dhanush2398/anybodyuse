@@ -61674,15 +61674,15 @@ h2.section-title {
   background-color: #063232;
 }
 
-/* Color styles for plan types */
-.premium { background-color: #DA572D; }
+
+.premium { background-color: #28a745; }
 .classic { background-color: #FF8C42; }
 .silver { background-color: #A9A9A9; }
 .gold { background-color: #FFD700; color: #333; }
 .diamond { background-color: #4DD0E1; color: #003c47; }
 .platinum { background-color: #063232; }
 
-/* Responsive Styles */
+
 @media (max-width: 992px) {
   .pricing-container {
     grid-template-columns: repeat(2, 1fr);
@@ -61716,4 +61716,15 @@ h2.section-title {
     font-size: 15px;
     padding: 10px;
   }
+}
+.about-slide_thumb img{
+  height: 410px;
+  width: 620px;
+}
+
+@media (max-width: 426px) {
+  .about-slide_thumb img{
+  height: 250px;
+  width: 620px;
+}
 }
