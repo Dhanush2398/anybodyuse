@@ -61732,3 +61732,44 @@ h2.section-title {
   width: 620px;
 }
 }
+
+.mobile-brand-text {
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 24px; 
+  z-index: 10;
+}
+
+
+@media (max-width: 320px) {
+  .mobile-brand-text {
+    font-size: 18px;
+    top: 20px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  .mobile-brand-text {
+    font-size: 22px;
+    top: 20px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+  .mobile-brand-text {
+    font-size: 24px;
+    top: 20px;
+  }
+}
+
+.mobile-brand-text .black-text {
+  color: black;
+}
+
+.mobile-brand-text .red-text {
+  color: #E63A27;
+}
